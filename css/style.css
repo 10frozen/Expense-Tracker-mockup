@@ -1,0 +1,53 @@
+/* Variables */
+:root {
+  --bg-dark: #fcf7f8;
+  --bg-card:#1D503A;
+  --bg-sidebar:#1D503A;
+  --mint: white;
+  --steel: #4682b4;
+  --text-light: #f5f5f5;
+  --text-muted: #aaa;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--bg-sidebar) !important;
+  min-width: 240px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Override bootstrap buttons to match style */
+.quick-btn {
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* Expenses list style */
+.expenses-table li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: 1rem;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background-color: var(--bg-card) !important;
+}
+
+/* Scroll for main content */
+.main {
+  overflow-y: auto;
+}
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
